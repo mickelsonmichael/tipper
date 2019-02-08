@@ -1,0 +1,33 @@
+
+
+.tipper {
+    position: relative;
+    cursor: help;
+}
+
+.tipper__content {
+    display: none;
+    position: absolute;
+    bottom: calc(10px + 100%);
+    background-color: rgba(60, 60, 60, 0.99);
+    padding: 0.5rem 1rem;
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
+    font-family: sans-serif;
+    text-decoration: none;
+    white-space: normal;
+    border-radius: 2px;
+}
+
+.tipper:hover .tipper__content {
+    display: block;
+}
+
+.tipper__content::after {
+    content: '';
+    display: block;
+    position: absolute;
+    border-top: 10px solid rgba(60, 60, 60, 0.99);
+    border-left: 10px solid transparent;
+}
