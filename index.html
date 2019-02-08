@@ -5,7 +5,7 @@
 <head>
     <meta charset="utf-8">
 
-    <title>js-snackbar</title>
+    <title>tipper</title>
     <meta name="description" content="DEMO">
     <meta name="author" content="Michael Mickelson">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -15,6 +15,11 @@
     <style>
         body {
           font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      }
+
+      body > div  {
+          margin: 1em;
+          padding: 1em;
       }
 
       .field {
@@ -30,19 +35,43 @@
 </head>
 
 <body>
-    <h1>Tooltip Demo</h1>
+    <h1 class="text-center">Tipper Demo</h1>
 
-    <p class="tipper text-center">
-        Top
-        <span class="tipper__content">
-            Here I go pointing up
+    <div class="text-center">
+        <span class="tipper">
+            .tipper
+            <span class="tipper__content">
+                Here I go pointing up
+            </span>
         </span>
-    </p>
+    </div>
 
-    
-    <p>Bottom</p>
-    <p>Left</p>
-    <p>Right</p>
+    <div class="text-center">
+        <span class="tipper tipper--bottom">
+            tipper (tipper--bottom or tipper--down)
+            <span class="tipper__content">
+                Here I go pointing down
+            </span>
+        </span>
+    </div>
+
+    <div class="text-center">
+        <span class="tipper tipper--left">
+            tipper tipper--left
+            <span class="tipper__content">
+                Here I go pointing left
+            </span>
+        </span>
+    </div>
+
+    <div class="text-center">
+        <span class="tipper tipper--right">
+            tipper tipper-right
+            <span class="tipper__content">
+                Here I go pointing right
+            </span>
+        </span>
+    </div>
     
 
     <script src="js/tipper.js" type="text/javascript"></script>
